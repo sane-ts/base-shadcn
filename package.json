@@ -38,7 +38,7 @@
   "scripts": {
     "ts": "tsc --noEmit",
     "release": "pnpm build && cd dist && pnpm publish --access public",
-    "build": "rm -rf dist && tsc && cp -r README.md package.json index.css themes dist"
+    "build": "rm -rf dist && tsc && cp -r README.md package.json index.css variants.css themes dist"
   },
   "peerDependencies": {
     "react": "^19.2.0",
