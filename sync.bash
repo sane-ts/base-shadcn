@@ -9,7 +9,7 @@ cat package.json.bak | jq '.dependencies = {}' > package.json
 rm package.json.bak
 pnpm install
 
-pnpm add class-variance-authority react-resizable-panels @base-ui/react clsx tailwind-merge lucide-react tw-animate-css @tailwindcss/typography
+pnpm add class-variance-authority clsx tailwind-merge lucide-react tw-animate-css react-resizable-panels @base-ui/react @tailwindcss/typography
 pnpx shadcn@latest add --all
 
 node fix-imports.js

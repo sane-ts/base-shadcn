@@ -25,6 +25,6 @@ fs.writeFileSync(import.meta.dirname + "/src/ui.ts", uiContent);
 {
   const scrollAreaPath = "src/components/ui/scroll-area.tsx";
   const scrollArea = fs.readFileSync(scrollAreaPath).toString();
-  const newScrollArea = scrollArea.split("\n").slice(3).join("\n");
+  const newScrollArea = scrollArea.split("\n").slice(1).join("\n");
   fs.writeFileSync(scrollAreaPath, newScrollArea);
 }
